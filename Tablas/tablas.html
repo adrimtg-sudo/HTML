@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+         border: 2px solid black;
+         border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>TABLAS</h1>
+    <p><table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Edad</th></tr>
+        <tr>
+            <td>Adrián</td>
+            <td>López</td>
+            <td>29</td></tr>
+        <tr>
+            <td>Teresa</td>
+            <td>Laín</td>
+            <td>62</td></tr>
+    </table></P>
+
+    <h1>Caption y ColSpan</h1>
+    <p>
+        <table>
+            <caption>Teléfonos</caption>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th colspan="2">Teléfonos</th>
+            </tr>
+            <tr>
+                <td>Adrián</td>
+                <td>López</td>
+                <td>123456789</td>
+            </tr>
+            <tr>
+                <td>Teresa</td>
+                <td>Laín</td>
+                <td>987654321</td>
+                <td>789456123</td>
+            </tr>
+        </table>
+    </p>
+
+    <h1>RowSpan</h1>
+    <p>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <td>Adrián</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Teléfonos</th>
+                <td>789456123</td>
+            </tr>
+            <tr>
+                <td>123456789</td>
+            </tr>
+        </table>
+    </p>
+
+    <h1>Propiedades por columnas</h1>
+    <p>
+        <table>
+            <colgroup>
+                <col span="1" style="background-color:lightblue">
+                <col span="1" style="background-color:lightgreen">
+                <col span="1" style="background-color:lightcoral">
+            </colgroup>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Julian</td>
+                <td>Rodriguez</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td>Carmen</td>
+                <td>Alcázar</td>
+                <td>48</td>
+            </tr>
+        </table>
+    </p>
+
+    <p><br><br><a href="../index.html"><input type="button" name="back" id="back" value="Volver al inicio"></a></p>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body style="font-family: Georgia, 'Times New Roman', Times, serif;">
+  <h1>Tipos de Inputs</h1>
+  <form action="procesa.php" 
+        method="post">
+  <fieldset>
+    <h2>Texto y password</h2>
+     <p>
+        <label for="nombre">Nombre</label>
+        <input type="text" 
+               maxlength="6" 
+               name="Nombre" 
+               id="nombre"
+               required
+               autofocus>
+     </p>
+     <p>
+        <label for="password">Contraseña</label>
+        <input type="text" 
+               maxlength="6" 
+               name="Contraseña" 
+               id="password"
+               required>
+     </p>
+
+    <h2>Radio</h2>
+     <p>
+        <label for="Male">Hombre:</label>
+        <input type="radio" 
+               value="M" 
+               name="gender" 
+               id="gender"
+        checked>
+
+        <label for="Female">Mujer:</label>
+        <input type="radio" 
+               value="F" 
+               name="gender" 
+               id="gender"
+        checked>
+     </p>
+    
+    <h2>Checkbox</h2>
+     <p>
+        <label for="smoker">Fumador</label>
+        <input type="checkbox" 
+               id="smoker" 
+               name="smoker">
+     </p>
+
+    <h2>Lista Desplegable</h2>
+     <p>
+        <label for="country">Nacionalidad:</label>
+        <select name="nacionalidad" id="country">
+            <option value="Spain">España</option>
+            <option value="Italy">Italia</option>
+            <option value="France">Francia</option>
+            <option value="Germany">Alemania</option>
+            <option value="China">China</option>
+            <option value="Other">Otro (especificar)</option>
+        </select>
+        <input type="text" 
+               placeholder="Si marcas otros">
+     </p>
+     
+    <h2>Área de Texto</h2>
+     <p>
+        <label for="obs">Observaciones</label>
+        <textarea name="obs" 
+                  id="obs" 
+                  cols="48" 
+                  rows="6">
+            Escriba aquí sus observaciones
+        </textarea>
+     </p>
+
+    <h2>Color</h2>
+     <p>
+        <label for="color">Color</label>
+        <input type="color" 
+               name="color" 
+               id="color"
+               disabled>
+     </p>
+
+    <h2>Fechas</h2>
+     <p>
+        <label for="fecha">Fecha de Nacimiento</label>
+        <input type="date" 
+               name="date" 
+               id="date"
+               required>
+     </p>
+
+    <h2>Números</h2>
+     <p>
+        <label for="age">Edad</label>
+        <input type="number" 
+               name="age" 
+               id="age" 
+               min="0" 
+               max="100">
+     </p>
+
+    <h2>Email</h2>
+     <p>
+        <label for="mail">Correo Electrónico</label>
+        <input type="email" 
+               name="mail" 
+               id="mail">
+     </p> 
+     
+    <h2>Archivos</h2>
+     <p>
+        <label for="picture">Foto de Perfil</label>
+        <input type="file" 
+               name="picture" 
+               id="picture">
+     </p>
+  </fieldset>
+
+<!-- Botones de envío y reinicio -->
+  <p>
+    <input type="submit" 
+           value="Enviar" 
+           id="submit" 
+           name="submit">
+    <input type="reset" 
+           value="Reiniciar" 
+           id="reset" 
+           name="reset">
+  </p> 
+
+  <p>
+       <br><a href="../index.html"><input type="button" name="back" id="back" value="Volver al inicio"></a>
+  </p>
+
+
+  </form> 
+</body>
+</html>
